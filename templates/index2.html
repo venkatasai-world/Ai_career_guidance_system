@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <title>Career Guidance - Input Form</title>
+</head>
+<body>
+    <form action="/result" method="POST">
+        <fieldset>
+            <legend>Career Guidance Form</legend>
+            
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your full name">
+            
+            <label for="edu">Education</label>
+            <input type="text" name="edu" id="edu" required placeholder="e.g., Bachelor's in Computer Science">
+            
+            <label for="skills">Your Skills</label>
+            <input type="text" name="skills" id="skills" required placeholder="e.g., Python, Communication, Problem Solving">
+            
+            <label for="intrest">Area of Interest</label>
+            <input type="text" name="intrest" id="intrest" required placeholder="e.g., Software Development, Marketing">
+            
+            <label for="hobbies">Hobbies</label>
+            <input type="text" name="hobbies" id="hobbies" required placeholder="e.g., Reading, Sports, Music">
+            
+            <label for="look">What are you looking for in a career?</label>
+            <input type="text" name="look" id="look" required placeholder="e.g., Growth, Work-life balance, Creativity">
+            
+            <label style="margin-top: 20px;">Would you like project recommendations?</label>
+            <div style="text-align: left; margin-top: 8px;">
+                <input type="radio" id="pro_yes" name="project_recommendation" value="yes">
+                <label for="pro_yes" style="display: inline; margin-left: 5px;">Yes</label>
+                
+                <input type="radio" id="pro_no" name="project_recommendation" value="no" checked style="margin-left: 20px;">
+                <label for="pro_no" style="display: inline; margin-left: 5px;">No</label>
+            </div>
+            
+            <button type="submit">Get My Career Guidance</button>
+        </fieldset>
+    </form>
+</body>
+</html>

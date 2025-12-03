@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Career Guidance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #ecf0f1;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+            border: 1px solid #ddd;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.2em;
+            font-weight: normal;
+        }
+        
+        .info-section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .info-section h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+        
+        .info-section p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .info-section strong {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .result-section {
+            margin-top: 25px;
+            padding: 25px;
+            background: #f0f8ff;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .result-section h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 18px;
+            font-size: 1.3em;
+        }
+        
+        .result-section div {
+            white-space: pre-wrap;
+            line-height: 1.8;
+            font-size: 1em;
+            color: #333;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 220px;
+            margin: 35px auto;
+            padding: 12px 25px;
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: normal;
+            border: none;
+            cursor: pointer;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+            font-family: Georgia, serif;
+        }
+        
+        .download-btn:hover {
+            background: #229954;
+            box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+        }
+        
+        form {
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .info-section, .result-section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Career Guidance</h1>
+        
+        <div class="info-section">
+            <h3>Your Information</h3>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Education:</strong> {{ edu }}</p>
+            <p><strong>Skills:</strong> {{ skills }}</p>
+            <p><strong>Area of Interest:</strong> {{ intrest }}</p>
+            <p><strong>Hobbies:</strong> {{ hobbies }}</p>
+            <p><strong>Career Goals:</strong> {{ look }}</p>
+        </div>
+        
+        <div class="result-section">
+            <h3>Career Recommendations</h3>
+            <div>{{ result }}</div>
+        </div>
+        
+        <form action="/download_pdf" method="POST">
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="edu" value="{{ edu }}">
+            <input type="hidden" name="skills" value="{{ skills }}">
+            <input type="hidden" name="intrest" value="{{ intrest }}">
+            <input type="hidden" name="hobbies" value="{{ hobbies }}">
+            <input type="hidden" name="look" value="{{ look }}">
+            <input type="hidden" name="result" value="{{ result }}">
+            <button type="submit" class="download-btn">Download as PDF</button>
+        </form>
+    </div>
+</body>
+</html>

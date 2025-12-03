@@ -1,0 +1,6 @@
+Flask
+google-generativeai
+reportlab
+gunicorn
+python-dotenv
+

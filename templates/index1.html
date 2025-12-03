@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body class="total">
+    <h1 class="satisfy-regular">Career Guidance System</h1>
+    <h3>Find Your Path to Success</h3>
+
+    <section class="career-info">
+        <h2>How It Works</h2>
+
+        <div class="box">
+            <pre class="career-desc">Tell us about yourself - your education, skills, interests, and what you're looking for in a career.
+
+We'll analyze your information and provide personalized career recommendations that match your profile.
+
+You'll get suggestions for career paths, job roles, skills to develop, and next steps to take.
+
+It's simple, quick, and designed to help you make better career decisions.</pre>
+        </div>
+    </section>
+
+    <a href="{{ url_for('form') }}">
+        <button class="kk">Get Started</button>
+    </a>
+</body>
+</html>

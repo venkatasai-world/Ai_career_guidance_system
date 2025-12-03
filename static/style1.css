@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.total {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 35px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.career-info {
+    background: white;
+    border-radius: 8px;
+    padding: 35px;
+    max-width: 850px;
+    width: 100%;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+.career-info h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.box {
+    height: auto;
+    min-height: 180px;
+    width: 100%;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.career-desc {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1em;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.kk {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: Georgia, serif;
+}
+
+.kk:hover {
+    background: #2980b9;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+    .satisfy-regular {
+        font-size: 2.2em;
+    }
+    
+    .career-info {
+        padding: 25px;
+    }
+    
+    .box {
+        padding: 15px;
+    }
+}
