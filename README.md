@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Career Guidance System - README</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #222;
-        }
-        h1, h2 {
-            font-weight: 600;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 6px;
-        }
-        h3 {
-            margin-top: 25px;
-            font-weight: 600;
-        }
-        p {
-            margin: 12px 0;
-        }
-        ul {
-            margin: 10px 0 20px 20px;
-        }
-    </style>
-</head>
-<body>
-
+<div class="readme">
     <h1>AI Career Guidance System</h1>
 
     <p>
@@ -45,7 +14,6 @@
         <li>Interests</li>
         <li>Career preferences and goals</li>
     </ul>
-    <p>Using this information, it delivers personalized insights and guidance.</p>
 
     <h2>Features</h2>
 
@@ -81,6 +49,28 @@
         Enter your personal and career-related details into the system’s interface to begin receiving 
         personalized career guidance.
     </p>
+</div>
 
-</body>
-</html>
+<style>
+    .readme {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+        line-height: 1.6;
+        color: #222;
+    }
+    .readme h1, .readme h2 {
+        font-weight: 600;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 6px;
+    }
+    .readme h3 {
+        margin-top: 25px;
+        font-weight: 600;
+    }
+    .readme p {
+        margin: 12px 0;
+    }
+    .readme ul, .readme ol {
+        margin: 10px 0 20px 20px;
+    }
+</style>
