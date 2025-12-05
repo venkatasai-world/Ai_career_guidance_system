@@ -1,56 +1,86 @@
-AI Career Guidance System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Guidance System - README</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #222;
+        }
+        h1, h2 {
+            font-weight: 600;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+        }
+        h3 {
+            margin-top: 25px;
+            font-weight: 600;
+        }
+        p {
+            margin: 12px 0;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
 
-The AI Career Guidance System is a professional tool designed to help individuals make informed and confident career decisions. By analyzing user-provided information, it delivers personalized recommendations that align with each person’s background, abilities, and career goals.
+    <h1>AI Career Guidance System</h1>
 
-Overview
+    <p>
+        The <strong>AI Career Guidance System</strong> is a professional tool designed to help individuals make informed 
+        and confident career decisions. It analyzes user-provided information and generates tailored career recommendations.
+    </p>
 
-This system processes key aspects of a user’s profile, including:
+    <h2>Overview</h2>
+    <p>This system evaluates the following aspects of the user’s profile:</p>
+    <ul>
+        <li>Education</li>
+        <li>Skills</li>
+        <li>Interests</li>
+        <li>Career preferences and goals</li>
+    </ul>
+    <p>Using this information, it delivers personalized insights and guidance.</p>
 
-Education
+    <h2>Features</h2>
 
-Skills
+    <h3>Personalized Career Recommendations</h3>
+    <p>Provides career paths and job roles that match the user’s background and interests.</p>
 
-Interests
+    <h3>Skill Development Insights</h3>
+    <p>Identifies valuable skills to build or improve for better career growth.</p>
 
-Career preferences and goals
+    <h3>Clear Next Steps</h3>
+    <p>Offers actionable guidance to help users advance toward their goals.</p>
 
-Based on this information, it generates data-driven insights and tailored career suggestions.
+    <h3>Simple and Efficient</h3>
+    <p>Designed for ease of use, offering quick and reliable recommendations.</p>
 
-Key Features
-Personalized Career Recommendations
+    <h2>How It Works</h2>
+    <ol>
+        <li>The user submits information related to their background, skills, and interests.</li>
+        <li>The AI processes this data through a structured career-matching framework.</li>
+        <li>The system generates tailored recommendations and guidance.</li>
+    </ol>
 
-Provides career paths and job roles that align with the user's strengths and interests.
+    <h2>Benefits</h2>
+    <ul>
+        <li>Objective and professional career insights</li>
+        <li>User-friendly and accessible design</li>
+        <li>Applicable for students, job seekers, and career changers</li>
+        <li>Supports clarity and informed decision-making</li>
+    </ul>
 
-Skill Development Insights
+    <h2>Getting Started</h2>
+    <p>
+        Enter your personal and career-related details into the system’s interface to begin receiving 
+        personalized career guidance.
+    </p>
 
-Identifies important skills the user should develop to remain competitive and advance in their chosen field.
-
-Practical Next Steps
-
-Offers clear actions and guidance to support career growth.
-
-Fast and Intuitive
-
-Designed for a simple, efficient user experience without unnecessary complexity.
-
-How the System Works
-
-The user submits details about their background, skills, and career interests.
-
-The AI analyzes the data using a structured career-matching model.
-
-The system outputs tailored recommendations, skill suggestions, and actionable next steps.
-
-Benefits
-
-Objective and personalized career insights
-
-Professional, easy-to-navigate design
-
-Suitable for students, job seekers, and professionals considering a career shift
-
-Helps clarify direction and expand career opportunities
-
-Getting Started
-
-Input your information through the system’s interface to begin receiving targeted and reliable career guidance.
+</body>
+</html>
