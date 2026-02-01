@@ -4,7 +4,7 @@ The **AI Career Guidance System** is a professional tool designed to help indivi
 
 ---
 
-## 🌟 Overview
+## 🌟 Overview of the project
 
 This system evaluates the following aspects of a user’s profile:
 
